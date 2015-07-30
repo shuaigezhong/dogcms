@@ -1,6 +1,6 @@
 var app = angular.module("app",["ngRoute"]);
 
-app.config(["$routeProvider",function($routeProvider){
+app.config(function($routeProvider){
     $routeProvider.when("/",{
         template:"<h1>内容部分</h1>"
     }).when("/index",{
@@ -8,4 +8,4 @@ app.config(["$routeProvider",function($routeProvider){
     }).otherwise({
         template:"<h2>这个是默认的模板哦</h2>"
     });
-}]);
+});
