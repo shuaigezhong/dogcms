@@ -4,7 +4,7 @@ app.config(function($routeProvider){
     $routeProvider.when("/",{
         template:"<h1>{{datas}}中</h1>",
 		controller:"usr_ctrl",
-    }).when("/usr_list/:id",{
+    }).when("/usr_list",{
         templateUrl:"usr_list.html",
 		controller : "usr_ctrl",
     }).otherwise({
